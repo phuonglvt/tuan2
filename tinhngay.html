@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <input id="thang" type="text">
+            <input type="button" value="tinh so ngay" onclick="result()">
+        </td>
+    </tr>
+</table>
+<p id="hienthi" ></p>
+<script>
+    function result() {
+        let m = parseInt(thang.value);
+        switch (m) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                let texta = "thang " + m + " co 31 ngay";
+                document.getElementById("hienthi").innerHTML = texta;
+                break;
+            case 2:
+                let textb = "thang " + m + " co 28 hoac 29 ngay";
+                document.getElementById("hienthi").innerHTML = textb;
+                break;
+            default:
+                let textc = "thang " + m + " co 30 ngay";
+                document.getElementById("hienthi").innerHTML = textc;
+                break;
+        }
+    }
+</script>
+</body>
+</html>

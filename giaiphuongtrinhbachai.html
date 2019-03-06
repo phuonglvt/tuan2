@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giai phuong trinh bac hai</title>
+</head>
+<body>
+<script>
+    let x, a, b, c;
+    a = parseInt(prompt('he so dau tien'));
+    b = parseInt(prompt('he so thu hai'));
+    c = parseInt(prompt('he so thu ba'));
+    let denta = b * b - 4 * a * c;
+    if (denta > 0) {
+        let x1 = (b * b - Math.sqrt(denta)) / (2 * a);
+        let x2 = (b * b + Math.sqrt(denta)) / (2 * a);
+        alert("nghiem x1 la" + " " + x1);
+        alert("nghiem x2 la" + " " + x2);
+    } else if (denta == 0) {
+        let x = - b / (2 * a);
+        alert(x);
+    } else {
+        alert('khong co gia tri cua x')
+    }
+</script>
+</body>
+</html>

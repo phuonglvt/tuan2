@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dieu kien tao thanh tam giac</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('nhap canh thu nhat'));
+    let b = parseFloat(prompt('nhap canh thu hai'));
+    let c = parseFloat(prompt('nhap canh thu ba'));
+    function dieukien() {
+        if (a > 0 & b > 0 & c > 0)
+            {return true;}
+        return false;
+    }
+    if (a + b > c & b + c > a & a + c > b) {
+        alert('a, b, c la ba canh cua mot tam giac');
+    } else {
+        alert('a, b, c khong la ba canh cua tam giac');
+    }
+</script>
+</body>
+</html>
