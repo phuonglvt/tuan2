@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BMI</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+Weight (Kg): <input type="number" id="weight">
+Height (M): <input type="number" id="height">
+<p id="ketqua"></p>
+<button onclick="Kqua();">Result</button>
+<script>
+    function ketqua(){
+        var weight = parseFloat(document.getElementById("weight").value);
+        var height = parseFloat(document.getElementById("height").value);
+        var result = parseFloat(weight / (height * height));
+        if (result <18.5){
+            document.getElementById("ketqua").innerHTML = "Underweight";
+        }
+        else if (result >18.5 && tinh <25){
+            document.getElementById("ketqua").innerHTML = "Normal";
+        }
+        else if (result >25 && tinh <30){
+            document.getElementById("ketqua").innerHTML = "Overweight";
+        }
+        else{
+            document.getElementById("ketqua").innerHTML = "Obese";
+        }
+    }
+</script>
+</body>
+</html>
