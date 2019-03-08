@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi suất ngân hàng</title>
+</head>
+<body>
+<script>
+    var bandau = parseFloat(prompt("Nhap so tien can vay"));
+    var sonam = parseFloat(prompt("Nhap so nam can vay"));
+    var laisuat = parseFloat(prompt("Nhap lai suat"));
+    var vesau = bandau;
+    for (var i = 0; i < sonam; i++){
+        var lai = vesau * laisuat;
+        vesau += lai;
+        document.write("Lai phai tra la "+ lai + ". Tien phai tra sau " + (i + 1) + " nam la "+ vesau +"<br>");
+    }
+    document.write("Tien ban dau la "+ bandau+", Tien phai tra sau "+i+" nam la "+ vesau+". Gap "+(vesau/bandau)+" lan" )
+</script>
+</body>
+</html>
