@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>Từ Điển</h1>
+    <input type="text" class ='ketqua' id="Tratu">
+    <button id="search" class ='button' onclick="Tim()">Search</button><br>
+    <div id="result"></div>
+</head>
+<body>
+<script>
+    var English = ["Hello","english","goodbye","monday","tuesday","wednesday","thusday","friday","saturday","sunday"];
+    var Vietnamese = ["xin chào","tiếng anh","tạm biệt","thứ hai","thứ ba","thứ tư","thứ năm","thứ sáu","thứ bảy","chủ nhật"];
+    function Tim() {
+        var tu= document.getElementById("Tratu").value;
+        var ketqua =0;
+        for (var i=0; i< English.length;i++){
+            if (tu == English[i]){
+                confirm(Vietnamese[i]);
+                ketqua =1;
+            }
+        }
+        if (ketqua ==0){
+            confirm("Khong co ket qua");
+        }
+    }
+</script>
+</body>
+</html>
