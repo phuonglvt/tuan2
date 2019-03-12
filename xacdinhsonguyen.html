@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xac dinh so trong mang</title>
+</head>
+<body>
+<script>
+    var a = parseInt(prompt("Enter a number V: "));
+    var numbers = [-1, 0, 1, 3, 5, 7, 9, 2, 4, 6];
+    var result = "";
+    for (var i = 0; i < numbers.length; i++){
+        if (a === numbers[i]){
+            result = "V is in the array";
+            break;
+        } else {
+            result =  "V is not in the array";
+        }
+    }
+    alert(result)
+</script>
+</body>
+</html>
