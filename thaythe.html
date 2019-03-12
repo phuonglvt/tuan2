@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thay the chu hoa va chu thuong</title>
+</head>
+<body>
+<script>
+    var a = prompt("Enter a sentences: ");
+    var UPPER = ["A","B","C","D","E","F","G","H","I","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    var LOWER = ["a","b","c","d","e","f","g","h","i","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+    var result = [];
+    for (var i = 0; i < a.length; i++){
+        if (UPPER.indexOf(a[i]) !==-1){
+            result.push(a[i].toLowerCase());
+        } else if (LOWER.indexOf(a[i]) !==-1){
+            result.push(a[i].toUpperCase());
+        } else {
+            result.push(a[i]);
+        }
+    }
+    document.write(result.join(''))
+</script>
+</body>
+</html>

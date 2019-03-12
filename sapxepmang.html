@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sap xep giam dan</title>
+</head>
+<body>
+<h2>Sắp Xếp Mảng</h2>
+<p>Sắp xếp mảng theo thứ tự giảm dần là <span id="demo"></span></p>
+<script>
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    numbers.sort(function(a, b){return b - a});
+    document.getElementById("demo").innerHTML = numbers;
+</script>
+</body>
+</html>
